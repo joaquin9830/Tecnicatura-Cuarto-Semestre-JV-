@@ -20,18 +20,5 @@ Python: Lenguaje de programación de alto nivel, conocido por su sintaxis clara 
 
 JavaScript: Lenguaje de programación esencial para el desarrollo web, utilizado tanto en el frontend como en el backend.
 
-🚀 Ejecución de Ejercicios
-Para ejecutar los ejercicios de cada lenguaje:
 
-Java
-Navega a la carpeta Java/.
-Abre el archivo de proyecto en tu IDE de Java preferido (Eclipse, IntelliJ, NetBeans).
-Compila y ejecuta el archivo .java deseado.
-Python
-Navega a la carpeta Python/.
-Abre el archivo .py en tu IDE o editor de texto preferido (PyCharm, VSCode, Sublime Text).
-Ejecuta el script usando el comando python nombre_del_archivo.py en tu terminal.
-JavaScript
-Navega a la carpeta JavaScript/.
-Abre el archivo .js en tu editor de texto preferido (VSCode, Atom).
-Ejecuta el archivo en un entorno de ejecución como Node.js o directamente en el navegador.
+
