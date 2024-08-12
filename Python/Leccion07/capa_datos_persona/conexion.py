@@ -5,9 +5,9 @@ from logger_base import log
 
 class Conexion:
     _DATABASE = 'test_bd'
-    _USERNAME = 'postgres'
+    _USERNAME = 'root'
     _PASSWORD = '32893064'
-    _DB_PORT = '5432'
+    _DB_PORT = '3306'
     _HOST = 'localhost'
     _conexion = None
     _cursor = None
