@@ -49,5 +49,11 @@ Para ejecutar los ejercicios de cada lenguaje:
 2. Abre el archivo `.py` en tu IDE o editor de texto preferido (PyCharm, VSCode, Sublime Text).
 3. Ejecuta el script usando el comando `python nombre_del_archivo.py` en tu terminal.
 
+### JavaScript
+1. Navega a la carpeta `JavaScript/`.
+2. Abre el archivo `.js` en tu editor de texto preferido (VSCode, Atom).
+3. Ejecuta el archivo en un entorno de ejecución como Node.js o directamente en el navegador.
+
+
 
 
