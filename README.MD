@@ -1,8 +1,3 @@
-
-Para ajustar el tamaño de las imágenes en un archivo Markdown, puedes utilizar una combinación de HTML y Markdown. Aquí tienes el README con las imágenes de tecnología ajustadas a un tamaño más pequeño:
-
-markdown
-Copiar código
 # 🖥️ Cuarto Semestre - TUP (Tecnicatura Universitaria en Programación)
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
