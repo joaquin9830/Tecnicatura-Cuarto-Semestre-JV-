@@ -70,3 +70,36 @@
 09:23:47 PM:ERROR [conexion.py:29] Ocurrió un error de la gran flauta: connection to server at "localhost" (::1), port 3306 failed: received invalid response to SSL negotiation: J
 
 09:24:53 PM:INFO [menu_app_usuario.py:20] Salimos de la aplicación, hasta pronto!
+09:38:11 PM:DEBUG [cursor_del_pool.py:10] Inicio del metodo with y __enter__
+09:38:11 PM:ERROR [conexion.py:29] Ocurrió un error de la gran flauta: connection to server at "localhost" (::1), port 3306 failed: received invalid response to SSL negotiation: J
+
+09:39:58 PM:DEBUG [cursor_del_pool.py:10] Inicio del metodo with y __enter__
+09:39:58 PM:ERROR [conexion.py:30] Ocurrió un error de la gran flauta: connection to server at "localhost" (::1), port 3306 failed: received invalid response to SSL negotiation: J
+
+09:40:45 PM:DEBUG [cursor_del_pool.py:10] Inicio del metodo with y __enter__
+09:40:45 PM:ERROR [conexion.py:30] Ocurrió un error de la gran flauta: connection to server at "127.0.0.1", port 3306 failed: received invalid response to SSL negotiation: J
+
+09:41:36 PM:DEBUG [cursor_del_pool.py:10] Inicio del metodo with y __enter__
+09:41:36 PM:ERROR [conexion.py:30] Ocurrió un error de la gran flauta: connection to server at "127.0.0.1", port 3306 failed: received invalid response to SSL negotiation: J
+
+09:44:30 PM:DEBUG [cursor_del_pool.py:10] Inicio del metodo with y __enter__
+09:44:30 PM:DEBUG [conexion.py:26] Conexión Exitosa: <connection object at 0x000001F90B4E6CE0; dsn: 'user=postgres password=xxx dbname=test_bd host=localhost port=5432', closed: 0>
+09:44:30 PM:DEBUG [usuario_dao.py:20] Seleccionando usuarios
+09:44:30 PM:DEBUG [cursor_del_pool.py:16] Se ejecuta el método exit
+09:44:30 PM:DEBUG [cursor_del_pool.py:19] Ocurrio una excepcion: relation "usuario" does not exist
+LINE 1: SELECT * FROM usuario ORDER BY id_usuario
+                      ^
+
+09:48:16 PM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+09:48:16 PM:DEBUG [conexion.py:26] Conexión Exitosa: <connection object at 0x00000250B39AACE0; dsn: 'user=postgres password=xxx dbname=test_bd host=localhost port=5432', closed: 0>
+09:48:16 PM:DEBUG [usuario_dao.py:20] Seleccionando usuarios
+09:48:16 PM:DEBUG [cursor_del_pool.py:17] Se ejecuta el método exit
+09:48:16 PM:DEBUG [cursor_del_pool.py:20] Ocurrio una excepcion: relation "usuario" does not exist
+LINE 1: SELECT * FROM usuario ORDER BY id_usuario
+                      ^
+
+09:49:25 PM:DEBUG [cursor_del_pool.py:11] Inicio del metodo with y __enter__
+09:49:25 PM:DEBUG [conexion.py:26] Conexión Exitosa: <connection object at 0x0000025ED0D06CE0; dsn: 'user=postgres password=xxx dbname=test_bd host=localhost port=5432', closed: 0>
+09:49:25 PM:DEBUG [usuario_dao.py:20] Seleccionando usuarios
+09:49:25 PM:DEBUG [cursor_del_pool.py:17] Se ejecuta el método exit
+09:49:25 PM:DEBUG [cursor_del_pool.py:23] Commit de la transaccion

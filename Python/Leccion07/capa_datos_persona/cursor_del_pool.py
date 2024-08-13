@@ -1,6 +1,7 @@
 from logger_base import log
 from conexion import Conexion
 
+
 class CursorDelPool:
     def __init__(self):
         self._conexion = None

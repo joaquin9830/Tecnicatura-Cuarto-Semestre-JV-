@@ -5,9 +5,9 @@ from logger_base import log
 
 class Conexion:
     _DATABASE = 'test_bd'
-    _USERNAME = 'root'
+    _USERNAME = 'postgres'
     _PASSWORD = '32893064'
-    _DB_PORT = '3306'
+    _DB_PORT = '5432'
     _HOST = 'localhost'
     _conexion = None
     _cursor = None
@@ -43,6 +43,8 @@ class Conexion:
                 sys.exit()
         else:
             return cls._cursor
+
+  
 
 if __name__ == '__main__':
     Conexion.obtenerConexion()
