@@ -7,19 +7,19 @@ import java.sql.SQLException;
 public class Conexion {
     public static Connection getConnection(){
         Connection conexion = null;
-        //vcariables para conectarnos:
-        var baseDeDatos="estudiantes2024";
-        var url = "jdbc:mysql://localhost:3306/"+baseDeDatos;
+        // Variables para conectarnos
+        var baseDeDatos = "estudiantes";  // Nombre correcto de la base de datos
+        var url = "jdbc:mysql://localhost:3306/" + baseDeDatos;
         var usuario = "root";
-        var password = "123456";
+        var password = "32893064";
 
-        //cargamos la clase del driver de msql en memoria:
+        // Cargamos la clase del driver de MySQL en memoria
         try {
-            Class.forName("com.msql.cj.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");  // Nombre correcto del driver
             conexion = DriverManager.getConnection(url, usuario, password);
-        } catch(ClassNotFoundException | SQLException e){
-            System.out.println("Ocurrio un error en la conexion: "+e.getMessage());
-        } //FIN CATCH
+        } catch (ClassNotFoundException | SQLException e) {
+            System.out.println("Ocurrio un error en la conexion: " + e.getMessage());
+        } // FIN CATCH
         return conexion;
-    } //FIN METODO Conenection
-} //FIN CLASS Conexion
+    } // FIN METODO Connection
+} // FIN CLASS Conexion
