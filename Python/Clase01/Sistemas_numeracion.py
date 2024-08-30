@@ -30,3 +30,12 @@ print(f"a binario: {a}")
 #Base Octal
 a = int('12', 8)
 print(f"a octal: {a}")
+
+#Base Hexagecimal
+a = int('A', 16)
+print(f"a hexadecimal: {a}")
+
+#Base 5 sus valores son de 0 a 4
+a = int('34', 5)
+print(f"a 5: {a}")
+
