@@ -8,3 +8,8 @@ print(f'valor: {valor}, Resultado: {resultado}')
 valor = 15
 resultado = bool(valor)
 print(f'valor: {valor}, Resultado: {resultado}')
+
+#Tipo string -> False '', True demás valores
+valor = ''
+resultado = bool(valor)
+print(f'valor: {valor}, Resultado: {resultado}')
