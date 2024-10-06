@@ -23,5 +23,4 @@ public class Libro {
     Double precio;
     Integer existencias;
 
-
 }
