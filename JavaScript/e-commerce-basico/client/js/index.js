@@ -1,29 +1,52 @@
-// Obtenemos el array de productos
-const shopcontent = document.getElementById('shopcontent');
-const cart = []; //Este es nuestro carrtio de compras, un array vacio que se ira llenando con los productos que el usuario seleccione
+const shopContent = document.getElementById("shopContent");
+const cart = []; // Carrito de compras vacío
 
-// Iteramos sobre el array de productos
 productos.forEach((product) => {
-    const content = document.createElement('div');
-    content.innerHTML= document.createElement('div');
+    const content = document.createElement("div");
+    content.classList.add("card");
+
     content.innerHTML = `
-    <img src="${product.img}">
-    <h3>${product.productName}</h3>
-    <p>${product.price} $</p>
+        <div class="card_form">
+            <img src="${product.img}" alt="${product.productName}">
+            <span>${product.productName}</span>
+        </div>
+        <div class="card_data">
+            <div class="text">
+                <label class="text_m">${product.productName}</label>
+                <div class="cube text_s">
+                    <label class="side front">500gr</label>
+                    <label class="side top">$${product.price}</label>
+                </div>
+            </div>
+        </div>
+        <div class="card_footer">
+            <img src="assets/images/icon-coffe.png" alt="Add to cart" class="cart_icon">
+        </div>
     `;
-    shopcontent.append(content);
 
-    const buyButton = document.createElement('button');
-    buyButton.innerText = 'Comprar';
+    shopContent.append(content);
 
-    content.append(buyButton);
-
-    buyButton.addEventListener('click', () => {
-        cart.push({
-            id: product.id,
-            productName: product.productName,
-            price: product.price,
-            quanty: product.quanty,
-        })
-    }
+    // Lógica del icono del carrito
+    const cartIcon = content.querySelector(".cart_icon");
+    cartIcon.addEventListener("click", () => {
+        const repeat = cart.some((repeatProduct) => repeatProduct.id === product.id);
+        if (repeat) {
+            cart.map((prod) => {
+                if (prod.id === product.id) {
+                    prod.quanty++;
+                    displayCartCounter();
+                }
+            });
+        } else {
+            cart.push({
+                id: product.id,
+                productName: product.productName,
+                price: product.price,
+                quanty: product.quanty,
+                img: product.img,
+            });
+            displayCartCounter();
+        }
+        console.log(cart);
+    });
 });

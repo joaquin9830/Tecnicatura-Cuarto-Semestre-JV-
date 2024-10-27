@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clase 1 JavaScript</title>
+    <!--  SDK MercadoPago.js -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+</head>
+
+<!-- Box Icon Link for Icons -->
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<body>
+    <!-- Header & Navbar Section -->
+    <header>
+        <nav>
+            <div class="nav_logo">
+                <a href="#">
+
+
+                </a>
+            </div>
+            <input type="checkbox" id="click" />
+            <label for="click">
+                <i class="menu_btn bx bx-menu"></i>
+                <i class="close_btn bx bx-x"></i>
+            </label>
+            <ul>
+                <li><a href="#">Tierra de Cafés</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#service">Cafés</a></li>
+                <li><a href="#why">Eleginos</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero_section">
+        <div class="image_section">
+            <img src="assets\images\banner2.png" alt="Tazade café" />
+        </div>
+        <div class="section_container">
+            <div class="hero_container">
+                <div class="text_section">
+                    <h2>Enciende tu Pasión</h2>
+                    <h3>Descubre la Magia en Cada Taza</h3>
+                    <p>
+                        Bienvenido a nuestro paraíso del café, donde cada grano cuenta una historia y cada taza
+                        despierta emociones.
+                    </p>
+                    <div class="hero_section_button">
+                        <a href="#service" class="button">Ordena en Línea</a>
+                        <a href="#about" class="button">Nosotros</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section class="about_us" id="about">
+        <div class="image_section">
+            <img src="./assets/images/about.jpg" alt="café saliendo de taza" />
+        </div>
+        <div class="section_container">
+
+            <div class="about_container">
+
+                <div class="text_section">
+                    <h2 class="section_title">Tierra de Cafés</h2>
+                    <p>
+                        En Tierra de Cafés, nuestra pasión por el café nos lleva a ofrecerte una experiencia única con
+                        cada taza. Seleccionamos cafés internacionales de alta calidad, trabajando directamente con
+                        productores que practican la sostenibilidad y el comercio justo.
+
+                        Cada grano cuenta una historia, y cada taza está hecha para inspirar. Descubre la magia de
+                        nuestros cafés y únete a nuestra comunidad de amantes del café.
+
+                        ¡Bienvenido a Tierra de Cafés!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services" id="service">
+        <h2 class="section_title">Nuestros Cafés</h2>
+        <div class="section_container">
+            <div class="service_container">
+                <!-- Card mediante id -->
+                <div id="shopContent" class="shop-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why_us" id="why">
+        <h2 class="section_title">Elígenos</h2>
+        <div class="section_container">
+            <div class="why_container">
+                <div class="why_items">
+                    <img class="cafe-origen" src="assets/images/gallery_4.jpg" alt="Cosecha de café" />
+                    <div class="why_us_text">
+                        <h3>Cafés de origen único</h3>
+                        <p>
+                            Cada uno de nuestros cafés proviene de fincas seleccionadas en las mejores regiones
+                            cafeteras del mundo. Garantizamos un proceso de producción artesanal que resalta el sabor
+                            único y auténtico de cada origen.
+                        </p>
+                    </div>
+                </div>
+                <div class="why_items">
+                    <img class="sostenibilidad" src="assets/images/gallery_5.jpg" alt="Café mundial" />
+                    <div class="why_us_text">
+                        <h3>Sostenibilidad y Comercio Justo</h3>
+                        <p>
+                            Nos aseguramos de trabajar con productores que siguen prácticas sostenibles y de comercio
+                            justo, apoyando tanto a las comunidades locales como al medio ambiente. Cada taza de café
+                            que disfrutas contribuye a mejorar la vida de los agricultores.
+                        </p>
+                    </div>
+                </div>
+                <div class="why_items">
+                    <img class="tostado" src="assets/images/gallery_6.jpg" alt="Producción de café" />
+                    <div class="why_us_text">
+                        <h3>Tostado experto y fresco</h3>
+                        <p>
+                            Nuestros cafés son tostados en pequeños lotes para garantizar la máxima frescura y un perfil
+                            de sabor excepcional. Cada bolsa está cuidadosamente preparada para resaltar las
+                            características distintivas de los granos, ofreciendo una experiencia inolvidable en cada
+                            sorbo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2 class="section_title">Nuestras Cosechas y Producción</h2>
+        <div class="section_container">
+            <div class="gallery_container">
+                <div class="gallery_items">
+                    <img src="assets/images/galeria1.jpg" alt="Plantación de café" />
+                </div>
+                <div class="gallery_items">
+                    <img src="assets/images/galeria2.jpg" alt="Hombre cosecha café" />
+                </div>
+                <div class="gallery_items">
+                    <img src="assets/images/galeria3.jpg" alt="Mujer selecciona café" />
+                </div>
+                <div class="gallery_items">
+                    <img src="assets/images/galeria4.jpg" alt="Granos de café" />
+                </div>
+                <div class="gallery_items">
+                    <img src="assets/images/galeria5.jpg" alt="Molienda de café" />
+                </div>
+                <div class="gallery_items">
+                    <img src="assets/images/galeria6.jpg" alt="Preparación de café" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section_title">Contactanos</h2>
+        <div class="section_container">
+            <div class="contact_container">
+                <div class="contact_form">
+                    <form action="#">
+                        <div class="field">
+                            <label for="Name">Nombre</label>
+                            <input type="text" id="Name" placeholder="Your Name" required />
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Your Email" required />
+                        </div>
+                        <div class="field">
+                            <label for="number">Teléfono</label>
+                            <input type="number" id="number" placeholder="Your Contact Number" required />
+                        </div>
+                        <div class="field">
+                            <label for="textarea">Mensaje</label>
+                            <textarea name="textarea" id="textarea" placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="button" id="submit">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="contact_text">
+                    <div class="contact_items">
+                        <i class="bx bx-current-location"></i>
+                        <div class="contact_details">
+                            <h3>Dónde estamos</h3>
+                            <p>Mendoza, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="contact_items">
+                        <i class="bx bxs-envelope"></i>
+                        <div class="contact_details">
+                            <h3>Email</h3>
+                            <p>juniortechtroopers@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact_items">
+                        <i class="bx bxs-phone-call"></i>
+                        <div class="contact_details">
+                            <h3>Llamanos</h3>
+                            <p>260453789023</p>
+                        </div>
+                    </div>
+                    <div class="contact_items">
+                        <i class="bx bxs-time-five"></i>
+                        <div class="contact_details">
+                            <h3>Horarios Atención</h3>
+                            <p>Lun-Vier : 10:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer_top">
+            <div class="footer_links">
+                <ul>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#service">Cafés</a></li>
+                    <li><a href="#why">Eleginos</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_center">
+            <p>Mendoza, Argentina</p>
+            <p>2604-xxxx</p>
+            <p>Lun-Vier: 9am - 6pm</p>
+        </div>
+        <div class="footer_bottom">
+            <div class="follow_us">
+
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <!-- Añade más iconos de redes sociales según sea necesario -->
+            </div>
+        </div>
+    </footer>
+
+    <!--contenedor compra-->
+    <div class="card-products-container">
+        <div class="card-products" id="shopContent"></div>
+    </div>
+
+    <!--cart btn-->
+    <!--win+punto aparecen los emoji en windows-->
+    <div class="cart-btn" id="cart-btn"> <i class='bx bx-cart'></i></div>
+
+    <!--cart counter-->
+    <samp class="cart-counter" id="cart-counter">0</samp>
+
+    <!--modal-->
+    <div class="modal-overlay" id="modal-overlay"></div> <!--Fondo de modal-->
+    <div class="modal-container" id="modal-container">
+        <button class="close-btn">
+            <img src="assets/icons/close-icon.png" alt="Cerrar" />
+        </button>
+    </div>
+
+
+    <script src="/client/js/products.js"></script>
+    <script src="/client/js/index.js"></script>
+    <script src="/client/js/cart.js"></script>
+
+</body>
+
+</html>
