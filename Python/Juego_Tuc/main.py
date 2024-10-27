@@ -34,7 +34,7 @@ def main():
     """
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGTH))
-    pygame.display.set_caption('Amenaza Francesa')
+    pygame.display.set_caption('Amenaza Fantasma')
 
     # Cargar icono y fondo del juego
     icon = pygame.image.load(f'{ASSETS_PATH}/images/fondo001.jfif')
