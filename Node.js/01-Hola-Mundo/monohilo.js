@@ -1,9 +1,14 @@
-console.log("Hola");
+console.log("Hola a todos")
 
 var i = 0;
-setInterval(function() {
-    console.log(i);
+setInterval(function () {
+    console.log(i)
     i++;
-}, 1000);
 
-console.log("Segunda instrucción");
+    //if (i === 5) {
+    //console.log("Forzamos un error")
+    //var a = 3 + z;
+
+    //}
+}, 1000);
+console.log("Segunda instruccion");

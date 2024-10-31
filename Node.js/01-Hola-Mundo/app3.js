@@ -1,21 +1,16 @@
-//Probando el comportamiento de los timeouts en NodeJS
-//Funciones sincronas 
-console.log('Inicio del programa'); 
 
-//Función de tiempo 1
+//Instrucciones no bloqueantes, todo es sincrono
+console.log('Inicio del programa'); //1
 setTimeout(() => {
-    console.log('Primer Timeout'); 
+    console.log('Primer Timeout'); //5
 }, 3000);
 
-//Función de tiempo 2
 setTimeout(() => {
-    console.log('Segundo Timeout'); 
+    console.log('Segundo Timeout'); //3
 }, 0);
 
-//Función de tiempo 3
 setTimeout(() => {
-    console.log('TercerTimeout'); 
+    console.log('TercerTimeout'); //4
 }, 0);
 
-//Finalizamos el programa
-console.log('Fin del programa') 
+console.log('Fin del programa') //2

@@ -1,7 +1,7 @@
-const nombre = 'Joaquín';
+const nombre = 'Marianela';
 console.log(nombre);
 
-const nombre2 = 'Java';
+const nombre2 = 'Juan';
 console.log(nombre2);
 
-console.log('Hola mundo por no se que vez pero en NODE.JS');
+console.log('Hola Mundo desde Node');
