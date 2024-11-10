@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+main {
+  background: linear-gradient(123deg, #FFFFFF 0%, #00B2FF 100%), linear-gradient(236deg, #BAFF99 0%, #005E64 100%), linear-gradient(180deg, #FFFFFF 0%, #002A5A 100%), linear-gradient(225deg, #0094FF 20%, #BFF4ED 45%, #280F34 45%, #280F34 70%, #FF004E 70%, #E41655 85%, #B30753 85%, #B30753 100%), linear-gradient(135deg, #0E0220 15%, #0E0220 35%, #E40475 35%, #E40475 60%, #48E0E4 60%, #48E0E4 68%, #D7FBF6 68%, #D7FBF6 100%);
+  background-blend-mode: overlay, overlay, overlay, darken, normal;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 50px;
+}
+
+.utn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+form {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.mainCard {
+  width: 40vw;
+  border-radius: 25px;
+  background-color: rgba(3, 10, 66, 0.247);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  color: #d3d3d3;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 15px;
+}
+
+.inputForm {
+  background-color: #2929744f;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #181717;
+  border-radius: 8px;
+  outline: none;
+  width: 45%;
+}
+
+.inputForm::placeholder {
+  padding: 0px;
+}
+
+.btnCreate {
+  padding: 10px 15px;
+  background-image: linear-gradient(109.6deg, rgb(1, 5, 7) 11.2%, rgb(64, 15, 241) 100.2%);
+  border: none;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.cardsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: scroll;
+  max-height: 60vh;
+  height: 60vh;
+}
+
+.card {
+  width: 90%;
+  padding: 15px;
+  background-image: linear-gradient(109.6deg, rgb(1, 5, 7) 11.2%, rgb(64, 15, 241) 100.2%);
+  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 5px 0px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #bbbbbb;
+  position: relative;
+}
+
+.task {
+  padding: 10px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: rgba(62, 161, 219, 1);
+}
+
+.completeIcon {
+  color: rgba(62, 161, 219, 1);
+}
+
+.trashIcon:hover {
+  color: rgb(161, 8, 221);
+}
+
+.deleteConfirmationPop {
+  position: relative;
+  background-color: rgba(255, 255, 255);
+  z-index: 99;
+  width: 100%;
+  top: -100px;
+  left: 0;
+}
+
+.deleteSpace {
+  position: relative;
+  width: 30%;
+}
+
+.noTasks {
+  font-size: 48px;
+}
+
+.date {
+  width: 100%;
+  padding: 15px;
+}
+
+/* Estilos para las barras de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px;
+  /* Ancho de la barra vertical */
+  height: 8px;
+  /* Altura de la barra horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  /* Color de fondo de la pista */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 100, 255, 0.6);
+  /* Color de la barra de desplazamiento */
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  /* Borde opcional alrededor del thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(100, 100, 255, 0.8);
+  /* Color al pasar el mouse */
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 1424px) {
+  .mainCard {
+    width: 60vw;
+  }
+
+  .inputForm {
+    width: 80%;
+  }
+
+  input {
+    margin: 2%;
+  }
+
+  .btnCreate {
+    width: 80%;
+  }
+}
